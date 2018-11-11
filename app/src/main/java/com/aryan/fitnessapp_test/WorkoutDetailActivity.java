@@ -61,6 +61,7 @@ public class WorkoutDetailActivity extends AppCompatActivity {
         setContentView(R.layout.activity_workout_detail);
         ButterKnife.bind(this);
         mDb=WorkoutDatabase.getsInstance(this);
+        workouts = getIntent().getParcelableExtra(getResources().getString(R.string.workouts_clicked_parcel));
 
 
         databaseReference= FirebaseDatabase.getInstance().getReference(FIREBASE_CHILD_WORKOUTS);
