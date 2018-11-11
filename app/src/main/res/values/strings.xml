@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">HyperFit</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="volley_error">Network Error! Please Try Again!</string>
+    <string name="workouts_clicked_parcel">workout_clicked_id</string>
+    <string name="no_description_string">No Description Available</string>
+    <string name="login_success">login Success</string>
+    <string name="creating_db_instance">Creating new database Instance</string>
+    <string name="getting_db_tag">Getting the database instance</string>
+    <string name="appwidget_text">HyperFit</string>
+    <string name="no_favorites">No favorites!</string>
+    <string name="morethantwo">More than two values should be there</string>
+    <string name="sign_in_cancel">Sign in canceled</string>
+    <string name="start">start</string>
+    <string name="pause">pause</string>
+    <string name="stop">stop</string>
+    <string name="enter_your_weight">Enter your Weight:</string>
+    <string name="enter_your_height_in_m">Enter your Height in \'m\':</string>
+    <string name="calculate_bmi">CALCULATE BMI</string>
+
+    <string name="refresh">Refresh</string>
+    <string name="abs">Abs</string>
+    <string name="arms">Arms</string>
+    <string name="back">back</string>
+    <string name="calves">calves</string>
+    <string name="chest">chest</string>
+    <string name="legs">legs</string>
+    <string name="shoulders">Shoulders</string>
+    <string name="log_size">size</string>
+    <string name="clicked_log">clickedId</string>
+    <string name="intent_extra_browse_fragment">i</string>
+    <string name="list_size_fav">size</string>
+    <string name="no_fav">No Favorites</string>
+    <string name="no_fav_toast">No favorite exercises</string>
+    <string name="list_null_log">List is null</string>
+    <string name="date_format">yy:MM:dd</string>
+    <string name="not_logged_in">Not Logged in</string>
+    <string name="finish_fire_log">FINISHED</string>
+    <string name="start_fire_log">STARTED</string>
+    <string name="bmi_history">BMI history</string>
+    <string name="home_frag_toolbar">Home</string>
+    <string name="workout_frag_text">Workouts</string>
+    <string name="fav_frag_text">Favorites</string>
+    <string name="log_room_retrieve">Actively retrieving tasks from database</string>
+    <string name="your_bmi">Your BMI:</string>
+    <string name="start_btx_txt">START</string>
+    <string name="image_url_p1">https://wger.de/api/v2/exerciseimage/</string>
+    <string name="image_url_2">/thumbnails/</string>
+    <string name="complete_btx_txt">Completed</string>
+    <string name="results_json">results</string>
+    <string name="large_cropped_txt">large_cropped</string>
+    <string name="image_not_avail">Image not Available</string>
+    <string name="cat_url_p1">https://wger.de/api/v2/exercise/?category=</string>
+    <string name="cat_url_p2"><![CDATA[&format=json&language=2&limit=20&ordering=id]]></string>
+    <string name="workout_image">workout_image</string>
+    <string name="category_image">category image</string>
+    <string name="fav_fab_content_describe">favorite fab</string>
+    <string name="height_hint_txt">Height</string>
+    <string name="weight_hint_txt">weight</string>
+</resources>

@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.aryan.fitnessapp_test.Fragments.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+
+    <com.jjoe64.graphview.GraphView
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/graph_height"
+        android:id="@+id/chart" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="200dip"
+        android:id="@+id/Graph_error"
+        android:visibility="gone"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chart"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/enter_your_weight"
+
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/weight_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/weight_hint_txt"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:inputType="numberDecimal"/>
+
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/lin_lay_home_frag"
+
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/enter_your_height_in_m"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/height_edit_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/height_hint_txt"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:inputType="numberDecimal"/>
+
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/bmi_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/calculate_bmi"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="@dimen/lin_lay_home_frag">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/your_bmi"
+            android:textSize="24sp"
+            />
+            <TextView
+                android:id="@+id/bmi_text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="0.23"
+                android:textSize="24sp"
+                android:textColor="#000000"
+                android:layout_marginStart="@dimen/home_margin_start_bmi"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

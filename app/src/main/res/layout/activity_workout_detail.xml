@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+
+    tools:context="com.aryan.fitnessapp_test.WorkoutDetailActivity">
+
+
+    <ImageView
+        android:id="@+id/place_image"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/no_image_placeholder"
+        android:contentDescription="@string/workout_image" />
+
+
+    <TextView
+        android:id="@+id/titleview"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/place_image"
+        android:background="#dd141b81"
+        android:gravity="center|start"
+
+        android:padding="8dp"
+        android:textColor="#ffffff"
+        android:textSize="20sp"
+        tools:text="Crunches" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleview">
+
+        <TextView
+            android:id="@+id/workout_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autoLink="web"
+            android:fontFamily="serif"
+            android:padding="6dp"
+            android:textSize="20sp"
+            tools:text="Description:"
+
+            />
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/buttonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ToggleButton
+
+            android:id="@+id/start_stop"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#00f134"
+            android:fontFamily="serif"
+            android:textOff="@string/start"
+            android:textOn="@string/pause"
+
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/stop_button"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="#ff1010"
+            android:fontFamily="serif"
+            android:text="@string/stop"
+            android:textColor="#ffffff"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/save_fab"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_above="@+id/buttonlayout"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="33dp"
+        android:layout_marginEnd="28dp"
+        android:contentDescription="@string/fav_fab_content_describe"
+        android:src="@drawable/ic_favorite_border_black_24dp"
+        app:backgroundTint="#193589" />
+
+
+</RelativeLayout>
+
